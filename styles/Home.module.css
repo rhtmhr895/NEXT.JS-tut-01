@@ -250,6 +250,24 @@
   }
 }
 
+
+.mainnav ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.mainnav ul li{
+  margin: 0 24px;
+  list-style: none;
+  font-weight: bold;
+
+}
+
+
+
+
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
@@ -276,3 +294,4 @@
     transform: rotate(0deg);
   }
 }
+
