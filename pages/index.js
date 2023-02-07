@@ -9,19 +9,7 @@ import axios from 'axios';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const data = {
-    "name":"jhon",
-    "surname":"doe"
-  }
 
-  const addData =  () =>{
-    axios.post("https://crudcrud.com/api/1b88764a566d41379b46f27e022054a7",data).then((response)=>{
-      console.log(response)
-    }).catch((err)=>{
-      console.log(err)
-    })
-
-  }
   return (
     <>
       <Head>
@@ -46,9 +34,26 @@ export default function Home() {
       <main className={styles.main}>
         <div className="blogs">
           <div className="blogItem">
-            <h1>How to learn REACT.JS in 2023.</h1>
+            <h3>How to learn REACT.JS in 2023.</h3>
             <p>REACT.JS is a javascript library designed by meta for front-end single page web applications.</p>
-            <button className="submit" onClick={addData}>submit</button>
+          </div>
+        </div>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn REACT.JS in 2023.</h3>
+            <p>REACT.JS is a javascript library designed by meta for front-end single page web applications.</p>
+          </div>
+        </div>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn REACT.JS in 2023.</h3>
+            <p>REACT.JS is a javascript library designed by meta for front-end single page web applications.</p>
+          </div>
+        </div>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn REACT.JS in 2023.</h3>
+            <p>REACT.JS is a javascript library designed by meta for front-end single page web applications.</p>
           </div>
         </div>
       </main>
